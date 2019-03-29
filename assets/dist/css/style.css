@@ -1,0 +1,95 @@
+main{
+	margin-bottom: 100px;
+}
+footer{
+	
+}
+.btn-outline-light:hover{
+	box-shadow: 2px 2px 10px #000;
+	color: #000 !important;
+	opacity: .8;
+}
+.carousel h1{
+	font-weight: 100 ;
+	text-shadow: 1px 1px 4px rgba(0,0,0,.7)
+}
+.carousel h1 span{
+	font-weight: 700;
+	color: salmon;
+}
+
+/*menu*/
+.menu{
+	position: relative;
+	overflow: hidden;
+}
+
+.menu img{
+}
+.menu span{
+	display: block;
+	width:100%;
+	height:250px;
+	position: absolute;
+	top: 0;
+ 	text-align: center;
+	background-color: rgba(0,0,0,.5);
+	opacity: 0;
+	transition: .5s;
+	transform: scale(0.9) rotate(350deg);
+}
+.menu span div{
+	margin-top: 70px;
+}
+.menu span:hover{
+	opacity: 1;
+	transform: scale(1) rotate(360deg);
+}
+/*end*/
+
+.sidebar{
+	width:100%;
+	position: static;
+}
+body{
+	background-color: #eee;
+}
+
+.dropdown a:hover{
+	background-color: transparent;
+}
+
+.bungkus{
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #eee;
+}
+.bayang{
+	box-shadow: 4px 4px rgba(0,0,0,0.3);
+}
+
+@media(min-width: 768px){
+	.sidebar{
+		position: fixed;
+		top:56px;
+		bottom: 0;
+
+		width: 250px;
+	}
+
+	.menubar{
+		position: fixed;
+		top:0;
+		left:0;
+		right:0;
+		z-index: 3;
+	}
+
+	.petugas{
+		margin-left: 250px;
+		margin-top: 72px;
+	}
+}
